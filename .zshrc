@@ -18,6 +18,12 @@ alias fixtime="sudo ntpdate pool.ntp.org"
 alias please='sudo $(fc -ln -1)'
 alias ..="cd .."
 alias ls="ls -a --color"
-alias dfc="git --git-dir=$HOME/.dotfiles --work-tree=$HOME" # dotfiles config
+
+# dotfiles config 
+alias dfc="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias dfca="git --git-dir=$HOME/.dotfiles --work-tree=$HOME add"
+alias dfcr="git --git-dir=$HOME/.dotfiles --work-tree=$HOME rm"
+alias dfcc="git --git-dir=$HOME/.dotfiles --work-tree=$HOME commit -m"
+alias dfcp="git --git-dir=$HOME/.dotfiles --work-tree=$HOME push origin main"
 
 fastfetch
