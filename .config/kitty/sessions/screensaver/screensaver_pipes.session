@@ -1,0 +1,5 @@
+layout tall
+
+launch --title screensaver lyricspot
+launch --title screensaver pipes.sh
+launch --title screensaver cava

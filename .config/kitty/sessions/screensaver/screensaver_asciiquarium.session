@@ -1,0 +1,5 @@
+layout tall
+
+launch --title screensaver lyricspot
+launch --title screensaver asciiquarium
+launch --title screensaver cava

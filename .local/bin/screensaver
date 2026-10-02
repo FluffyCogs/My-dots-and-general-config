@@ -1,0 +1,5 @@
+kitten @ resize-os-window --action toggle-fullscreen
+screensaver_paths=( ~/.config/kitty/sessions/screensaver/screensaver_pipes.session ~/.config/kitty/sessions/screensaver/screensaver_asciiquarium.session ~/.config/kitty/sessions/screensaver/screensaver_fireplace.session ~/.config/kitty/sessions/screensaver/screensaver_cbonsai.session )
+selected_path=${screensaver_paths[ $RANDOM % ${#screensaver_paths[@]} ]}
+kitten @ action goto_session ${selected_path}
+kitten @ close-tab --self

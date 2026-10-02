@@ -1,0 +1,5 @@
+layout tall
+
+launch --title screensaver lyricspot
+launch --title screensaver cbonsai -li -w 2 -L 48
+launch --title screensaver cava

@@ -1,0 +1,118 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "file",
+        "source": "/home/fluffycogs/.config/fastfetch/images/TetOS.txt",
+        "padding": {
+            "top": 1
+        },
+        "color": {
+            "1": "red"
+        }
+    },
+    "display": {
+        "separator": ">  ",
+        "color": {
+            "separator": "red",
+            "title": "yellow"
+        },
+        "constants": [
+            "═══════════════════════════════════════════════════════════════════════════",
+            "║\u001b[75C║\u001b[75D",
+            " \u001b[75C \u001b[75D"
+        ]
+    },
+    "modules": [
+        {
+            "type": "break"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "format": "{#1}{#keys}{#red}╔{$1}╗\u001b[76D {user-name-colored}{at-symbol-colored}{host-name-colored} ",
+            "type": "title"
+        },
+        {
+            "key": " ",
+            "type": "os",
+            "format": "{#bold_red}{$2}{#strike_red}  distro      >  {pretty-name} "
+        },
+        {
+            "key": "{#red}{$2}{#31}  OS          ",
+            "type": "custom",
+            "format": "TetOS"
+        },
+        {
+            "key": "{#red}{$2}{#36}  initsys     ",
+            "type": "initsystem"
+        },
+        {
+            "key": "{#red}{$2}{#36} 󰏖 packages    ",
+            "type": "packages"
+        },
+        {
+            "key": "{#red}{$2}{#31}  height      ",
+            "type": "custom",
+            "format": "159.5cm"
+        },
+        {
+            "key": "{#red}{$2}{#35}  term        ",
+            "type": "terminal"
+        },
+        {
+            "key": "{#red}{$2}{#35}  shell       ",
+            "type": "shell"
+        },
+        {
+            "key": "{#red}{$2}{#31}  age         ",
+            "type": "custom",
+            "format": "31"
+        },
+        {
+            "key": "{#red}{$2}{#34} 󱈹 desktop     ",
+            "type": "de"
+        },
+        {
+            "key": "{#red}{$2}{#34} 󱂬 wm          ",
+            "type": "wm",
+        },
+        {
+            "key": "{#red}{$2}{#31}  sex         ",
+            "type": "custom",
+            "format": "Chimera"
+        },
+        {
+            "key": "{#red}{$2}{#32} 󰅐 uptime      ",
+            "type": "uptime"
+        },
+        {
+            "key": "{#red}{$2}{#32}  date & time ",
+            "type": "datetime"
+        },
+        {
+            "key": "{#red}{$2}{#31}  media       ",
+            "type": "media",
+            "format": "{artist} - {combined} ({progress})"
+        },
+        {
+            "format": "{#keys}{#red}╠{$1}╣",
+            "type": "custom"
+        },
+        {
+            "key": "{#red}{$2}{#37} 󰸌 colors  ",
+            "type": "colors",
+            "symbol": "circle"
+        },
+        {
+            "format": "{#1}{#keys}{#red}╚{$1}╝",
+            "type": "custom"
+        }
+    ]
+}
