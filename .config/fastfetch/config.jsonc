@@ -81,7 +81,7 @@
         },
         {
             "key": "{#red}{$2}{#34} 󱂬 wm          ",
-            "type": "wm",
+            "type": "wm"
         },
         {
             "key": "{#red}{$2}{#31}  sex         ",
@@ -95,6 +95,11 @@
         {
             "key": "{#red}{$2}{#32}  date & time ",
             "type": "datetime"
+        },
+        {
+            "key": "{#red}{$2}{#32}  OS Age      ",
+            "type": "command",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); days_difference=$(( (current - birth_install) / 86400 )); echo $days_difference days"
         },
         {
             "key": "{#red}{$2}{#31}  media       ",

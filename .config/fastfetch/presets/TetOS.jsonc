@@ -41,92 +41,80 @@
         },
         {
             "key": " ",
-            "type": "kernel",
-            "format": "{#bold_red}{$2}{#strike_red}  kernel   >  {sysname} {release} "
-        },
-        {
-            "key": " ",
             "type": "os",
-            "format": "{#bold_red}{$2}{#strike_red}  distro   >  {pretty-name}          "
+            "format": "{#bold_red}{$2}{#strike_red}  distro      >  {pretty-name} "
         },
         {
-            "key": "{#red}{$2}{#31}  OS       ",
+            "key": "{#red}{$2}{#31}  OS          ",
             "type": "custom",
             "format": "TetOS"
         },
         {
-            "key": "{#red}{$2}{#34}  initsys  ",
+            "key": "{#red}{$2}{#36}  initsys     ",
             "type": "initsystem"
         },
         {
-            "key": "{#red}{$2}{#32} 󰅐 uptime   ",
-            "type": "uptime"
+            "key": "{#red}{$2}{#36} 󰏖 packages    ",
+            "type": "packages"
         },
         {
-            "key": "{#red}{$2}{#31}  height   ",
+            "key": "{#red}{$2}{#31}  height      ",
             "type": "custom",
             "format": "159.5cm"
         },
         {
-            "key": "{#red}{$2}{#35}  term     ",
+            "key": "{#red}{$2}{#35}  term        ",
             "type": "terminal"
         },
         {
-            "key": "{#red}{$2}{#36}  shell    ",
+            "key": "{#red}{$2}{#35}  shell       ",
             "type": "shell"
         },
         {
-            "key": "{#red}{$2}{#31}  age      ",
+            "key": "{#red}{$2}{#31}  age         ",
             "type": "custom",
             "format": "31"
         },
         {
-            "key": "{#red}{$2}{#34} 󰇄 desktop  ",
+            "key": "{#red}{$2}{#34} 󱈹 desktop     ",
             "type": "de"
         },
         {
-            "key": "{#red}{$2}{#35} 󰍛 cpu      ",
-            "type": "cpu",
-            "showPeCoreCount": true,
-            "temp": true
+            "key": "{#red}{$2}{#34} 󱂬 wm          ",
+            "type": "wm"
         },
         {
-            "key": "{#red}{$2}{#31}  teto     ",
-            "type": "custom",
-            "format": "teto"
-        },
-        {
-            "key": "{#red}{$2}{#34} 󰍛 gpu      ",
-            "type": "gpu"
-        },
-        {
-            "key": "{#red}{$2}{#33} 󰉉 disk     ",
-            "type": "disk",
-            "folders": "/"
-        },
-        {
-            "key": "{#red}{$2}{#31}  sex      ",
+            "key": "{#red}{$2}{#31}  sex         ",
             "type": "custom",
             "format": "Chimera"
         },
         {
-            "key": "{#red}{$2}{#32}  memory   ",
-            "type": "memory"
+            "key": "{#red}{$2}{#32} 󰅐 uptime      ",
+            "type": "uptime"
         },
-        //{
-        //    "key": "{$2}{#31} 󰩟 network  ",
-        //    "type": "localip",
-        //    "format": "{ipv4} ({ifname})"
-        //},
-        //{
-        //    "format": "{#1}{#keys}╠{$1}╣",
-        //    "type": "custom"
-        //},
-        //{
-        //    "key": "{$2}{#39}  colors   ",
-        //    "type": "colors",
-        //    "symbol": "circle"
-        //},
+        {
+            "key": "{#red}{$2}{#32}  date & time ",
+            "type": "datetime"
+        },
+        {
+            "key": "{#red}{$2}{#32}  OS Age      ",
+            "type": "command",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); days_difference=$(( (current - birth_install) / 86400 )); echo $days_difference days"
+        },
+        {
+            "key": "{#red}{$2}{#31}  media       ",
+            "type": "media",
+            "format": "{artist} - {combined} ({progress})"
+        },
+        {
+            "format": "{#keys}{#red}╠{$1}╣",
+            "type": "custom"
+        },
+        {
+            "key": "{#red}{$2}{#37} 󰸌 colors  ",
+            "type": "colors",
+            "symbol": "circle"
+        },
         {
             "format": "{#1}{#keys}{#red}╚{$1}╝",
             "type": "custom"
